@@ -55,6 +55,6 @@ module.exports = {
         };
         scheduleResetQuests();
         setInterval(() => { db.query('SELECT 1', (err) => { if (err) { console.error('Erreur lors de la requête KEEP ALIVE :', err) } }) }, 20000);
-        console.log(`Ready! Logged in as ${client.user.tag}`);
+        console.log(`Ready! Logged in as ${client.user.username}`);
     },
 };
